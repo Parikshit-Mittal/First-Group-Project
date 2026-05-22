@@ -9,20 +9,20 @@ import React from 'react'
 const Todo = ({ id, title, description, completed, onDelete, onToggleComplete }) => {
     return (
         <div className="flex items-start gap-3 rounded-lg border border-slate-200 bg-white p-4 shadow-sm">
-            <input
-                id={`todo-${id}`}
-                type="checkbox"
-                checked={completed}
-                onChange={onToggleComplete}
-                className="mt-1 h-4 w-4 rounded border-slate-300 text-indigo-600 focus:ring-indigo-500"
-            />
+            <button
+                type="button"
+                onClick={onToggleComplete}
+                className="mt-0.5 inline-flex items-center rounded-md border border-slate-200 px-2.5 py-1.5 text-xs font-medium text-slate-700 hover:bg-slate-50"
+                aria-pressed={completed}
+            >
+                Mark as done
+            </button>
             <div className="min-w-0 flex-1">
-                <label
-                    htmlFor={`todo-${id}`}
+                <div
                     className={`block text-sm font-semibold text-slate-900 ${completed ? 'line-through text-slate-400' : ''}`}
                 >
                     {title}
-                </label>
+                </div>
                 <p className={`mt-1 text-sm text-slate-600 ${completed ? 'line-through text-slate-400' : ''}`}>
                     {description}
                 </p>
