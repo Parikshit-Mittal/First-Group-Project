@@ -1,0 +1,24 @@
+{
+  "name": "first-group-project",
+  "version": "1.0.0",
+  "description": "todo app",
+  "homepage": "https://github.com/Parikshit-Mittal/First-Group-Project#readme",
+  "bugs": {
+    "url": "https://github.com/Parikshit-Mittal/First-Group-Project/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Parikshit-Mittal/First-Group-Project.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "^5.2.1",
+    "mongoose": "^9.6.2"
+  }
+}
